@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: poppins, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+nav {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    text-align: center;
+    padding: 8px;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: white;
+    font-weight: 400;
+    box-shadow: none;
+}
+
+nav a:hover {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    border-radius: 4rem;
+    box-shadow: 0 0 5px #00c6ff, 0 0 15px #00c6ff, 0 0 30px #0072ff;
+    padding: 3px 8px;
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+.home {
+    margin-left: 40rem;
+    margin-top: 20rem;
+    background: transparent;
+}
+
+img {
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #00c6ff, 0 0 15px #00c6ff, 0 0 30px #0072ff;
+}
+
+.box {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    width: 65rem;
+    height: 16rem;
+    margin-left: 52rem;
+    margin-top: -39rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #00c6ff, 0 0 15px #00c6ff, 0 0 30px #0072ff;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 0.1rem;
+    margin-top: 2.2rem;
+}
+
+.ttd{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 2.2rem;
+    margin-left: 1rem;
+}
+
+.isicontent {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 2.2rem;
+    margin-left: 1rem
+}
+
+.p {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    box-shadow: 0 0 5px #00c6ff, 0 0 15px #00c6ff, 0 0 30px #0072ff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    width: 60rem;
+    margin-left: 55rem;
+    margin-top: 6dvh;
+}
+
+.tentangsayasingkat {
+    color: white;
+    font-size: 19px;
+}
+
+.image {
+    opacity: 0;
+    transform: translateX(-420px);
+    animation: left 1s ease forwards;
+}
+
+@keyframes left {
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.box {
+    opacity: 0;
+    transform: translateX(420px);
+    animation: right 1s ease forwards;
+}
+
+@keyframes right {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.p {
+    opacity: 0;
+    transform: translateY(200px);
+    animation: bottom 1s ease forwards;
+}
+
+@keyframes bottom {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: up 1s ease forwards;
+}
+
+@keyframes up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width:1000px){
+    nav {
+        font-size: 11px;
+        gap: 25px;
+    }
+}
+
+@media(max-width:995px){
+    .home {
+        margin-left: 10px;
+        padding: 5px 10px
+    }
+
+    img {
+        width: 15rem;
+        height: 20rem;
+        margin-top: -12rem;
+        margin-left: 13rem;
+    }
+
+    .box {
+        margin-left: -3px;
+        margin-top: 7rem;
+        width: 40rem;
+        height: 10rem;
+    }
+
+    .content {
+        font-size: 6px;
+        margin-top: 16px;
+        margin-left: 3px;
+    }
+
+    .ttd {
+        font-size: 6px;
+        margin-top: 16px;
+        margin-left: 4px;
+    }
+
+    .isicontent {
+        font-size: 6px;
+        margin-top: 16px;
+    }
+
+    .p {
+        margin-left: 5px;
+        width: 38rem;
+        height: 14rem;
+    }
+
+    .tentangsayasingkat {
+        font-size: 1.4rem;
+        margin-top: -12px;
+    }
+}
